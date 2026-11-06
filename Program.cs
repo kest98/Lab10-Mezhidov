@@ -10,18 +10,19 @@
 
 
 
-// int[] grades = { 4, 5, 3, 5, 4 };
-// int sum = 0;
+int[] grades = { 4, 5, 3, 5, 4 };
+int sum = 0;
 
-// foreach (int grade in grades) {
-//     Console.WriteLine(grade);
-//     sum += grade;
-// }
+foreach (int grade in grades)
+{
+    Console.WriteLine(grade);
+    sum += grade;
+}
 
-// double check = (double)sum / grades.Length;
+double check = (double)sum / grades.Length;
 
-// Console.WriteLine($"Сумма всех оценок: {sum}");
-// Console.WriteLine($"Средний балл: {check}");
+Console.WriteLine($"Сумма всех оценок: {sum}");
+Console.WriteLine($"Средний балл: {check}");
 
 
 
@@ -99,46 +100,46 @@
 
 
 
-Console.Write("Введите свою фамилию: ");
-string surname = Console.ReadLine()!.Trim();
-if (string.IsNullOrEmpty(surname)) {
-Console.WriteLine("Фамилия не введена. Завершение работы.");
-return;
-}
-Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
-var assigned = Enumerable.Range(1, 10)
-.OrderBy(_ => rnd.Next())
-.Take(2)
-.OrderBy(x => x)
-.ToList();
-Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+// Console.Write("Введите свою фамилию: ");
+// string surname = Console.ReadLine()!.Trim();
+// if (string.IsNullOrEmpty(surname)) {
+// Console.WriteLine("Фамилия не введена. Завершение работы.");
+// return;
+// }
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+// var assigned = Enumerable.Range(1, 10)
+// .OrderBy(_ => rnd.Next())
+// .Take(2)
+// .OrderBy(x => x)
+// .ToList();
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
 
 
 
 
 
 //4
-int[] prices = { 100, 600, 400, 1200, 300, 700 };
+// int[] prices = { 100, 600, 400, 1200, 300, 700 };
 
-int sum = 0;
-int count = 0;
+// int sum = 0;
+// int count = 0;
 
-foreach (int p in prices) {
-    sum += p;
+// foreach (int p in prices) {
+//     sum += p;
 
-    if (p > 500) {
-        count++; 
-    }
-}
+//     if (p > 500) {
+//         count++; 
+//     }
+// }
 
-Console.WriteLine($"Сумма: {sum}");
-Console.WriteLine($"Количество товаров дороже 500: {count}");
+// Console.WriteLine($"Сумма: {sum}");
+// Console.WriteLine($"Количество товаров дороже 500: {count}");
 
-//9
-int[] a = { 10, 20, 30 };
+// //9
+// int[] a = { 10, 20, 30 };
 
-for (int i = 0; i < a.Length; i++) {
-    a[i] = a[i] + 1;
-    Console.WriteLine(a[i]);
-}
+// for (int i = 0; i < a.Length; i++) {
+//     a[i] = a[i] + 1;
+//     Console.WriteLine(a[i]);
+// }
 
